@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIITDMJ CONFESSION PAGE</title>
+    <link rel="stylesheet" href="confession.css">
+    <script src="https://kit.fontawesome.com/d0a1f4c68e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    
+    <div class="container">
+        <!-- <form id="conf3essions"> -->
+            <h1 id="h1"><strong>IIITDMJ ANONYMOUS CONFESSIONS<i class="fa-solid fa-heart"></i></strong></h1>
+
+            <p id="h21">POST CONFESSIONS</p>
+            <label for="rollnopost" id="Rollnopost"><strong>ROLL NUMBER:</strong><label><br>
+            <input type="text" id="rollnopost" placeholder="Enter your roll no"><br>
+            <label for="confession" id="Confession"><strong>CONFESSION:</strong></label><br>
+            <input type="text" id="confession" placeholder="Enter your confession here"><br>
+
+            <p id="h22">GET CONFESSIONS</p>
+            <label for="rollnoget" id="Rollnoget"><strong>ROLL NUMBER:</strong><label><br>
+            <input type="text" id="rollnoget" placeholder="Enter your roll no"><br>
+            <p id="p1">
+
+            <button type="submit" onclick="postdata()" id="post_confession">POST CONFESSION</button>
+            <button type="submit" onclick="fetchdata()" id="get_confession">GET CONFESSION</button><br>
+        </p>
+        <b><p id="dispConf"></p></b>
+        <script src="confession.js"></script>
+            
+        <!-- </form
+          -->
+</div>
+</body>
+</html>
