@@ -1,55 +1,71 @@
-<h1>Confession-API-project</h1>
-
-#Anonymous Confession Website
+# Confession_API_Project
+# Anonymous Confession Website
 
 This is a simple web application that allows users to send anonymous confessions to their loved ones and retrieve confessions sent to them based on their roll number. The application uses HTML, CSS, and JavaScript to create a user-friendly interface and interacts with a backend API to handle the confessions.
 
-Features
-Post Confession: Users can enter their roll number and confession, and click on post confession button to post it anonymously.
-Get Confession: Users can retrieve confessions sent to their roll number by entering the roll number and clicking on get confession.
+## Features
 
-#Technologies Used:
-HTML: Structure of the web pages.
-CSS: Styling of the web pages.
-JavaScript: Handling user interactions and making API requests.
+- **Post Confession**: Users can enter their roll number and confession, and submit it anonymously.
+- **Get Confession**: Users can retrieve confessions sent to their roll number.
 
-#How to Run the Project
-#1)Clone the Repository:git clone https://github.com/yourusername/anonymous-confession.git
-cd anonymous-confession
-Open the Project Open index.html in your preferred web browser.
+## Technologies Used
 
-Project Structure
-index.html: The main HTML file containing the structure of the web application.
-style.css: The CSS file containing styles for the web application.
-script.js: The JavaScript file containing the logic for interacting with the API.
-API Endpoints
-Add Confession
-URL: /api/postConfession
-Method: POST
-Request Body:
-roll_no (string): The roll number of the person you want to send the confession.
-confession (string): The confession text submitted by the user.
-Response: A JSON object containing the roll number, confession, and a unique identifier for the confession entry.
-Get Confession
-URL: /api/getConfession
-Method: GET
-Query Parameter:
-roll_no (string): The roll number for which the confession is requested.
-Response: A JSON array containing the confessions related to the provided roll number.
-Usage
-Submit a Confession
+- **HTML**: Structure of the web pages.
+- **CSS**: Styling of the web pages.
+- **JavaScript**: Handling user interactions and making API requests.
 
-Enter your roll number in the "Roll Number" input box.
-Enter your confession in the "Confession" textarea.
-Click the "Submit Confession" button.
-A message will be displayed indicating whether the confession was posted successfully or if there was an error.
-Get a Confession
+## How to Run the Project
 
-Enter your roll number in the "Roll Number" input box.
-Click the "Get Confession" button.
-The confession sent to your roll number will be displayed if found, otherwise a message indicating no confessions found will be shown.
+1. **Clone the Repository**
+    ```bash
+    git clone https://github.com/iamsafal10/Confession_API_Project.git
+    cd anonymous-confession
+    ```
+
+2. **Open the Project**
+    Open `confession.html` in your preferred web browser.
+
+## Project Structure
+
+- `confession.html`: The main HTML file containing the structure of the web application.
+- `confession.css`: The CSS file containing styles for the web application.
+- `confession.js`: The JavaScript file containing the logic for interacting with the API.
+
+## API Endpoints
+
+### Add Confession
+- **URL**: `/api/postConfession`
+- **Method**: `POST`
+- **Request Body**:
+  - `roll_no` (string): The roll number of the person you want to send the confession.
+  - `confession` (string): The confession text submitted by the user.
+- **Response**: A JSON object containing the roll number, confession, and a unique identifier for the confession entry.
+
+### Get Confession
+- **URL**: `/api/getConfession`
+- **Method**: `GET`
+- **Query Parameter**: 
+  - `roll_no` (string): The roll number for which the confession is requested.
+- **Response**: A JSON array containing the confessions related to the provided roll number.
+
+## Usage
+
+1. **Post a Confession**
+   - Enter your roll number in the "Roll Number" input box.
+   - Enter your confession in the "Confession" textarea.
+   - Click the "POST CONFESSION " button.
+   - A message will be displayed indicating whether the confession was posted successfully or if there was an error.
+
+2. **Get a Confession**
+   - Enter your roll number in the "Roll Number" input box.
+   - Click the "GET CONFESSION" button.
+   - The confession sent to your roll number will be displayed if found, otherwise a message indicating no confessions found will be shown.
+
+
+
 .
 
-Acknowledgements
-Special thanks to the creators of the backend API used in this project.
-Also special thanks to RISHIKESH SIR and AKASH SIR for their help in making this project work
+## Acknowledgements
+
+- Special thanks to the creators of the backend API used in this project.
+- Also special thanks to RISHIKESH SIR and AKASH SIR for their help in making this project work
