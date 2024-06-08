@@ -11,7 +11,7 @@ async function fetchdata(){
             const display=document.getElementById("dispConf");
             for(let i=0;i<data.length;i++)
             {
-            display.innerHTML+="<br\>"+`Recent Confession: ${data[i].confession}`;
+            display.innerHTML="<br\>"+`Recent Confession: ${data[i].confession}`;
             console.log(data);
             // display.innerHTML="";
             }
